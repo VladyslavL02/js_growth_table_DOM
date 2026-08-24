@@ -115,7 +115,7 @@ function removeColumn() {
   const allRows = [...document.querySelectorAll('tr')];
 
   allRows.forEach((row) => {
-    row.querySelector('td').remove();
+    row.querySelector('td:last-child').remove();
   });
 
   activeColumns--;
